@@ -1,0 +1,37 @@
+﻿<Window x:Class="SortFile.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SortFile"
+        mc:Ignorable="d"
+        Title="Сортировка файлов" Height="293.936" Width="445.588">
+    <Grid Margin="0,0,0,-5" Height="268" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="26*"/>
+            <ColumnDefinition Width="47*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="path" Content="Выберите директорию" HorizontalAlignment="Left" VerticalAlignment="Top" Width="148" Click="path_Click" Margin="10,10,0,0" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="71,2,0,0" TextWrapping="Wrap" Text="Параметры сортировки" VerticalAlignment="Top" Width="141" Grid.Column="1"/>
+        <Button x:Name="start" Content="Старт" HorizontalAlignment="Left" Margin="31,223,0,0" VerticalAlignment="Top" Width="75" Click="start_Click" Grid.Column="1"/>
+        <TextBox x:Name="pathtextBox" HorizontalAlignment="Left"  Height="114" Margin="10,31,0,0" TextWrapping="Wrap" Text="Информация по выбранной дирректории" VerticalAlignment="Top" Width="148" Grid.ColumnSpan="2" IsEnabled="False"/>
+        <Button x:Name="exit" Content="Завершение" HorizontalAlignment="Left" Margin="193,223,0,0" VerticalAlignment="Top" Width="76" Click="exit_Click" Grid.Column="1"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="31,25,0,0" TextWrapping="Wrap" Text="Сортировать по:" VerticalAlignment="Top" Grid.Column="1"/>
+        <RadioButton x:Name="dateCreateButton" Content="Дате создания" HorizontalAlignment="Left" Margin="143,25,0,0" VerticalAlignment="Top" IsChecked="False" Checked="dateCreateButton_Checked" Grid.Column="1"/>
+        <RadioButton x:Name="dateChangeButton" Content="Дате изменения" HorizontalAlignment="Left" Margin="143,45,0,0" VerticalAlignment="Top" IsChecked="True" Checked="dateChangeButton_Checked" Grid.Column="1"/>
+        <Button x:Name="saveConfig" Content="Сохранить настройки" HorizontalAlignment="Left" Margin="127,184,0,0" VerticalAlignment="Top" Width="142" Click="saveConfig_Click" Grid.Column="1"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="31,65,0,0" TextWrapping="Wrap" Text="Название папки:" VerticalAlignment="Top" Height="23" Grid.Column="1"/>
+        <TextBox x:Name="namedirecBox" HorizontalAlignment="Left" Height="48" Margin="127,64,0,0" TextWrapping="Wrap" Text="Отсортировано" VerticalAlignment="Top" Width="142" Grid.Column="1"/>
+        <Button x:Name="regButtom" Content="Добавить" HorizontalAlignment="Left" Margin="74,174,0,0" VerticalAlignment="Top" Width="72" Click="regButtom_Click"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="10,153,0,0" TextWrapping="Wrap" Text="Контекстное меню:" VerticalAlignment="Top" Width="114"/>
+        <Button x:Name="regdelButton" Content="Убрать" HorizontalAlignment="Left" Margin="74,199,0,0" VerticalAlignment="Top" Width="72" Click="regdelButton_Click"/>
+        <TextBlock x:Name="textBlock4" Grid.Column="1" HorizontalAlignment="Left" Margin="31,118,0,0" TextWrapping="Wrap" Text="Точность сортировки:" VerticalAlignment="Top" Width="151"/>
+        <CheckBox x:Name="YcheckBox" Content="Год" Grid.Column="1" HorizontalAlignment="Left" Margin="31,139,0,0" VerticalAlignment="Top" Checked="YcheckBox_Checked" Unchecked="YcheckBox_Checked"/>
+        <CheckBox x:Name="McheckBox" Content="Месяц" Grid.Column="1" HorizontalAlignment="Left" Margin="84,139,0,0" VerticalAlignment="Top" Checked="McheckBox_Checked" Unchecked="McheckBox_Checked"/>
+        <CheckBox x:Name="WcheckBox" Content="Неделя" Grid.Column="1" HorizontalAlignment="Left" Margin="153,139,0,0" VerticalAlignment="Top" Checked="WcheckBox_Checked" Unchecked="WcheckBox_Checked"/>
+        <CheckBox x:Name="DcheckBox" Content="День" Grid.Column="1" HorizontalAlignment="Left" Margin="221,139,0,0" VerticalAlignment="Top" Checked="DcheckBox_Checked" Unchecked="DcheckBox_Checked"/>
+        <CheckBox x:Name="HcheckBox" Content="Часы" Grid.Column="1" HorizontalAlignment="Left" Margin="31,162,0,0" VerticalAlignment="Top" Checked="HcheckBox_Checked" Unchecked="HcheckBox_Checked"/>
+        <CheckBox x:Name="MincheckBox" Content="Минуты" Grid.Column="1" HorizontalAlignment="Left" Margin="84,162,0,0" VerticalAlignment="Top" Checked="MincheckBox_Checked" Unchecked="MincheckBox_Checked"/>
+        <CheckBox x:Name="ScheckBox" Content="Секунды" Grid.Column="1" HorizontalAlignment="Left" Margin="153,162,0,0" VerticalAlignment="Top" Checked="ScheckBox_Checked" Unchecked="ScheckBox_Checked"/>
+    </Grid>
+</Window>

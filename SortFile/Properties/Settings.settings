@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SortFile.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SettingdateCreateButton" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SettingChangeButton" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SettingnamedirecBox" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Отсортированно</Value>
+    </Setting>
+    <Setting Name="SettingNameStart" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Запуск сортировки</Value>
+    </Setting>
+    <Setting Name="SettingNameSetting" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Настройки</Value>
+    </Setting>
+    <Setting Name="SettingDate" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SettingBlock" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
