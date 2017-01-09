@@ -1,6 +1,0 @@
-c:\users\шашеро\documents\visual studio 2015\Projects\DateFile\DateFile\bin\Debug\DateFile.exe.config
-c:\users\шашеро\documents\visual studio 2015\Projects\DateFile\DateFile\bin\Debug\DateFile.exe
-c:\users\шашеро\documents\visual studio 2015\Projects\DateFile\DateFile\bin\Debug\DateFile.pdb
-c:\users\шашеро\documents\visual studio 2015\Projects\DateFile\DateFile\obj\Debug\DateFile.exe
-c:\users\шашеро\documents\visual studio 2015\Projects\DateFile\DateFile\obj\Debug\DateFile.pdb
-C:\Users\Шашеро\documents\visual studio 2015\Projects\DateFile\DateFile\obj\Debug\DateFile.csprojResolveAssemblyReference.cache

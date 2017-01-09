@@ -1,10 +1,1 @@
-C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\DeleteCreateSubKeyRegister\bin\Debug\DateFile.exe.config
-C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\DeleteCreateSubKeyRegister\obj\Debug\DateFile.exe
-C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\DeleteCreateSubKeyRegister\obj\Debug\DateFile.pdb
-C:\Users\Шашеро\documents\visual studio 2015\Projects\DateFile\DeleteCreateSubKeyRegister\bin\Debug\DateFile.exe
-C:\Users\Шашеро\documents\visual studio 2015\Projects\DateFile\DeleteCreateSubKeyRegister\bin\Debug\DateFile.pdb
-C:\Users\Шашеро\documents\visual studio 2015\Projects\DateFile\DeleteCreateSubKeyRegister\bin\Debug\NGitLab.dll
-C:\Users\Шашеро\documents\visual studio 2015\Projects\DateFile\DeleteCreateSubKeyRegister\obj\Debug\DeleteCreateSubKeyRegister.csprojResolveAssemblyReference.cache
 C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\DeleteCreateSubKeyRegister\bin\Debug\DateFile.exe.config
-C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\DeleteCreateSubKeyRegister\obj\Debug\DateFile.exe
-C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\DeleteCreateSubKeyRegister\obj\Debug\DateFile.pdb
