@@ -12,7 +12,7 @@
       <Value Profile="(Default)">Отсортированно</Value>
     </Setting>
     <Setting Name="SettingNameStart" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Запуск сортировки</Value>
+      <Value Profile="(Default)">Запуск</Value>
     </Setting>
     <Setting Name="SettingNameSetting" Type="System.String" Scope="User">
       <Value Profile="(Default)">Настройки</Value>

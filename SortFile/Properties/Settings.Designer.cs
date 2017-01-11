@@ -61,7 +61,7 @@ namespace SortFile.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Запуск сортировки")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Запуск")]
         public string SettingNameStart {
             get {
                 return ((string)(this["SettingNameStart"]));

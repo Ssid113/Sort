@@ -15,7 +15,7 @@ namespace Update
                 File.Move("SortFileUP.exe", "SortFile.exe");
                 Process startexe = new Process();
                 startexe.StartInfo.FileName = "SortFile.exe"; // СОЗДАТЬ ПРОВЕРКУ
-                startexe.StartInfo.Arguments = "afterup";
+                startexe.StartInfo.Arguments = "afterup"; //не работает как надо...
                 startexe.Start();
                 Environment.Exit(0);
             }
