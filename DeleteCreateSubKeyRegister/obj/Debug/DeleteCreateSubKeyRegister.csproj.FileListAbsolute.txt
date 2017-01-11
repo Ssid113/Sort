@@ -1,1 +1,5 @@
 C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\DeleteCreateSubKeyRegister\bin\Debug\DateFile.exe.config
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\DeleteCreateSubKeyRegister\bin\Debug\DateFile.exe
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\DeleteCreateSubKeyRegister\bin\Debug\DateFile.pdb
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\DeleteCreateSubKeyRegister\obj\Debug\DateFile.exe
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\DeleteCreateSubKeyRegister\obj\Debug\DateFile.pdb

@@ -50,38 +50,37 @@ namespace SortFile
         private void regButtom_Click(object sender, RoutedEventArgs e)
         {
             byte[] b = Properties.Resources.DeleteCreateSubKeyRegister;                                             //Create project DeleteCreateSubKeyRegister
-            FileStream fs = new FileStream("DeleteCreateSubKeyRegister1.exe", FileMode.Create);
+            FileStream fs = new FileStream(System.Windows.Forms.Application.StartupPath + @"\DeleteCreateSubKeyRegister1.exe", FileMode.Create);
             fs.Write(b, 0, b.Length);
             fs.Close();
 
             Process regexe = new Process();
             regexe.StartInfo.Verb = "runas";
-            regexe.StartInfo.FileName = "DeleteCreateSubKeyRegister1.exe"; // СОЗДАТЬ ПРОВЕРКУ И ЗАЩИТУ РЕЕСТРА ОТ МУСОРА
+            regexe.StartInfo.FileName = System.Windows.Forms.Application.StartupPath + @"\DeleteCreateSubKeyRegister1.exe"; // СОЗДАТЬ ПРОВЕРКУ И ЗАЩИТУ РЕЕСТРА ОТ МУСОРА
             regexe.StartInfo.Arguments = "start " + Properties.Settings.Default.SettingNameStart + " " + Properties.Settings.Default.SettingNameSetting;
             try
             {
                 regexe.Start(); 
                 regexe.WaitForExit();
                 MessageBox.Show(regexe.ExitCode.ToString());
-                MessageBox.Show(Properties.Settings.Default.SettingNameSetting);
                 regexe.Close();
             }
             catch { }
 
 
-            File.Delete("DeleteCreateSubKeyRegister1.exe");
+            File.Delete(System.Windows.Forms.Application.StartupPath + @"\DeleteCreateSubKeyRegister1.exe");
 
         }
         private void regdelButton_Click(object sender, RoutedEventArgs e)
         {
             byte[] b = Properties.Resources.DeleteCreateSubKeyRegister;                                             //Create project DeleteCreateSubKeyRegister
-            FileStream fs = new FileStream("DeleteCreateSubKeyRegister1.exe", FileMode.Create);
+            FileStream fs = new FileStream(System.Windows.Forms.Application.StartupPath + @"\DeleteCreateSubKeyRegister1.exe", FileMode.Create);
             fs.Write(b, 0, b.Length);
             fs.Close();
 
             Process regexe = new Process(); 
             regexe.StartInfo.Verb = "runas";
-            regexe.StartInfo.FileName = "DeleteCreateSubKeyRegister1.exe"; // СОЗДАТЬ ПРОВЕРКУ
+            regexe.StartInfo.FileName = System.Windows.Forms.Application.StartupPath + @"\DeleteCreateSubKeyRegister1.exe"; // СОЗДАТЬ ПРОВЕРКУ
             regexe.StartInfo.Arguments = "del ";
             try
             {
@@ -92,7 +91,7 @@ namespace SortFile
             }
             catch { }
 
-            File.Delete("DeleteCreateSubKeyRegister1.exe");
+            File.Delete(System.Windows.Forms.Application.StartupPath + @"\DeleteCreateSubKeyRegister1.exe");
         }
 
         private void YcheckBox_Checked(object sender, RoutedEventArgs e)
@@ -242,7 +241,7 @@ namespace SortFile
             Properties.Settings.Default.SettingnamedirecBox = namedirecBox.Text;  // СОЗДАТЬ ПРОВЕРКУ
             Properties.Settings.Default.SettingBlock = 0;
             Properties.Settings.Default.Save();
-            System.Windows.Forms.MessageBox.Show(string.Format("Настройки сохранены"));
+            MessageBox.Show("Настройки сохранены");
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using Microsoft.Win32;
 
 namespace DeleteCreateSubKeyRegister
@@ -63,7 +64,7 @@ namespace DeleteCreateSubKeyRegister
                     keyFunction.CreateSubKey("ssid.sort(ProgFileSort)");
                     keyFunction.OpenSubKey("ssid.sort(ProgFileSort)", true).SetValue("", NameStart);
                     keyFunction.OpenSubKey("ssid.sort(ProgFileSort)", true).CreateSubKey("command");
-                    keyFunction.OpenSubKey("ssid.sort(ProgFileSort)", true).OpenSubKey("command", true).SetValue("", @"""" + Environment.CurrentDirectory + @"\DateFileSort.exe"" true");
+                    keyFunction.OpenSubKey("ssid.sort(ProgFileSort)", true).OpenSubKey("command", true).SetValue("", @"""" + System.Windows.Forms.Application.StartupPath + @"\SortFile.exe"" true");
                     answer += 2;
                 }
 
@@ -77,7 +78,7 @@ namespace DeleteCreateSubKeyRegister
                     keyFunction.CreateSubKey("ssid.sort.settings(ProgFileSort)");
                     keyFunction.OpenSubKey("ssid.sort.settings(ProgFileSort)", true).SetValue("", NameSetting);
                     keyFunction.OpenSubKey("ssid.sort.settings(ProgFileSort)", true).CreateSubKey("command");
-                    keyFunction.OpenSubKey("ssid.sort.settings(ProgFileSort)", true).OpenSubKey("command", true).SetValue("", @"""" + Environment.CurrentDirectory + @"\DateFileSort.exe""");
+                    keyFunction.OpenSubKey("ssid.sort.settings(ProgFileSort)", true).OpenSubKey("command", true).SetValue("", @"""" + System.Windows.Forms.Application.StartupPath + @"\SortFile.exe""");
                     answer += 4;
                 }
             }
