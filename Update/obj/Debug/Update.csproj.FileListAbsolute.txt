@@ -1,0 +1,6 @@
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\Update\bin\Debug\Update.exe.config
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\Update\bin\Debug\Update.exe
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\Update\bin\Debug\Update.pdb
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\Update\obj\Debug\Update.csprojResolveAssemblyReference.cache
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\Update\obj\Debug\Update.exe
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\Update\obj\Debug\Update.pdb

@@ -1,1 +1,14 @@
 C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\SortFile\bin\Debug\SortFile.exe.config
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\SortFile\bin\Debug\SortFile.exe
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\SortFile\bin\Debug\SortFile.pdb
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\SortFile\obj\Debug\MainWindow.g.cs
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\SortFile\obj\Debug\App.g.cs
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\SortFile\obj\Debug\SortFile_MarkupCompile.cache
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\SortFile\obj\Debug\SortFile_MarkupCompile.lref
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\SortFile\obj\Debug\MainWindow.baml
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\SortFile\obj\Debug\SortFile.g.resources
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\SortFile\obj\Debug\SortFile.Properties.Resources.resources
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\SortFile\obj\Debug\SortFile.csproj.GenerateResource.Cache
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\SortFile\obj\Debug\SortFile.exe
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\SortFile\obj\Debug\SortFile.pdb
+C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\SortFile\obj\Debug\SortFile.csprojResolveAssemblyReference.cache
