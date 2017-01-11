@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.IO;
+using System.Net;
 using System.Windows;
 using System.Diagnostics;
 
@@ -33,9 +34,11 @@ namespace SortFile
                 }
             }
 
-            //проверка версии сделать отключаемой
+            //проверка версии сделать отключаемой, проверка файла, защита
             FileVersionInfo myFileVersionInfo = FileVersionInfo.GetVersionInfo(@"SortFile.exe");
-            FileVersionInfo updateFileVersionInfo = FileVersionInfo.GetVersionInfo(@"C:\Users\Шашеро\Documents\Visual Studio 2015\Projects\DateFile\Sort\StartProg\SortFile.exe");
+            WebClient webClient = new WebClient();
+            webClient.DownloadFile(@"https://github.com/Ssid113/Sort/raw/master/StartProg/SortFile.exe", @"SortFileUP.exe");
+            FileVersionInfo updateFileVersionInfo = FileVersionInfo.GetVersionInfo(@"SortFileUP.exe");
             if (myFileVersionInfo.FileVersion != updateFileVersionInfo.FileVersion)
             {
                 byte[] b = SortFile.Properties.Resources.Update;                                             //Create project Update

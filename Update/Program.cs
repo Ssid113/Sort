@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Update
 {
-    class Program
+    class Program   //Yes, it is my golden hammer...
     {
         static void Main(string[] args)
         {
