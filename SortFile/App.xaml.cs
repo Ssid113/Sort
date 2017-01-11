@@ -15,6 +15,7 @@ namespace SortFile
 
         private void Application_Startup(object sender, StartupEventArgs e)
         {
+            File.Delete("Update.exe");
             if (e.Args.Length !=0)
             {
                 if (e.Args[0] == "afterup")
@@ -45,8 +46,16 @@ namespace SortFile
                 upexe.StartInfo.Verb = "runas";
                 upexe.StartInfo.FileName = "Update.exe"; // СОЗДАТЬ ПРОВЕРКУ
                 upexe.StartInfo.Arguments = "start";
-                upexe.Start();
-                Environment.Exit(0);
+                try
+                {
+                    upexe.Start();
+                    Environment.Exit(0);
+                }
+                catch
+                {
+                    File.Delete("Update.exe");
+                    File.Delete("SortFileUP.exe");
+                }//проверка          
             }
             else
             {
