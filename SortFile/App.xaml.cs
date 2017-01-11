@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
 using System.IO;
 using System.Net;
 using System.Windows;
@@ -35,10 +30,10 @@ namespace SortFile
             }
 
             //проверка версии сделать отключаемой, проверка файла, защита
-            FileVersionInfo myFileVersionInfo = FileVersionInfo.GetVersionInfo(@"SortFile.exe");
+            FileVersionInfo myFileVersionInfo = FileVersionInfo.GetVersionInfo("SortFile.exe");
             WebClient webClient = new WebClient();
-            webClient.DownloadFile(@"https://github.com/Ssid113/Sort/raw/master/StartProg/SortFile.exe", @"SortFileUP.exe");
-            FileVersionInfo updateFileVersionInfo = FileVersionInfo.GetVersionInfo(@"SortFileUP.exe");
+            webClient.DownloadFile("https://github.com/Ssid113/Sort/raw/master/StartProg/SortFile.exe", "SortFileUP.exe");
+            FileVersionInfo updateFileVersionInfo = FileVersionInfo.GetVersionInfo("SortFileUP.exe");
             if (myFileVersionInfo.FileVersion != updateFileVersionInfo.FileVersion)
             {
                 byte[] b = SortFile.Properties.Resources.Update;                                             //Create project Update
@@ -46,13 +41,18 @@ namespace SortFile
                 fs.Write(b, 0, b.Length);
                 fs.Close();
 
-                Process regexe = new Process();
-                regexe.StartInfo.Verb = "runas";
-                regexe.StartInfo.FileName = "Update.exe"; // СОЗДАТЬ ПРОВЕРКУ
-                regexe.StartInfo.Arguments = "start";
-                regexe.Start();
+                Process upexe = new Process();
+                upexe.StartInfo.Verb = "runas";
+                upexe.StartInfo.FileName = "Update.exe"; // СОЗДАТЬ ПРОВЕРКУ
+                upexe.StartInfo.Arguments = "start";
+                upexe.Start();
                 Environment.Exit(0);
             }
+            else
+            {
+                File.Delete("SortFileUP.exe");
+            }
+                  
 
         }
     }

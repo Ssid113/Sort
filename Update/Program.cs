@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
+using System.Diagnostics;
 
 namespace Update
 {
@@ -13,8 +11,13 @@ namespace Update
             if (args.Length > 0)
             {
                 //Готовка
-                Console.WriteLine("Все получилось");
-                Console.ReadLine();
+                File.Delete("SortFile.exe");
+                File.Move("SortFileUP.exe", "SortFile.exe");
+                Process startexe = new Process();
+                startexe.StartInfo.FileName = "SortFile.exe"; // СОЗДАТЬ ПРОВЕРКУ
+                startexe.StartInfo.Arguments = "afterup";
+                startexe.Start();
+                Environment.Exit(0);
             }
         }
     }
